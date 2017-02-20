@@ -1,0 +1,31 @@
+<Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description"
+	xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	configVersion="3.2.0"
+	xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
+	<LayerStoreId>gebiedbeheer_vastgesteld</LayerStoreId>
+	<LayerStoreId>gebiedinrichting_vastgesteld</LayerStoreId>
+	<LayerStoreId>gebiedverwerving_vastgesteld</LayerStoreId>
+	
+	<Theme>
+		<d:Title>Voortgangsrapportage Natuur</d:Title>
+		<s:CRS>EPSG:28992</s:CRS>
+		<Theme>
+			<Identifier>imna:gebiedbeheer_vastgesteld</Identifier>
+			<d:Title>IMNA gebiedbeheer</d:Title>
+			<s:CRS>EPSG:28992</s:CRS>
+			<Layer>gebiedbeheer_vastgesteld</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>imna:gebiedinrichting_vastgesteld</Identifier>
+			<d:Title>IMNA gebiedinrichting</d:Title>
+			<s:CRS>EPSG:28992</s:CRS>
+			<Layer>gebiedinrichting_vastgesteld</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>imna:gebiedverwerving_vastgesteld</Identifier>
+			<d:Title>IMNA gebiedverwerving</d:Title>
+			<s:CRS>EPSG:28992</s:CRS>
+			<Layer>gebiedverwerving_vastgesteld</Layer>
+		</Theme>
+	</Theme>
+</Themes>

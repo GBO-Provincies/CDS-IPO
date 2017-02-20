@@ -1,0 +1,32 @@
+<Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
+
+  <LayerStoreId>lyrAF_NL</LayerStoreId>
+  
+  <Theme>
+    <d:Title>AgriculturalAndAquacultureFacilities</d:Title>
+    <s:CRS>EPSG:28992</s:CRS>
+    
+    <Theme>
+      <Identifier>AF.BestandVeehouderijbedrijven.bedrijf</Identifier>
+      <d:Title>BestandVeehouderijbedrijven, bedrijven</d:Title>
+      <s:CRS>EPSG:28992</s:CRS>
+      <Layer>AF.BestandVeehouderijbedrijven.bedrijf</Layer>
+    </Theme>
+
+    <Theme>
+      <Identifier>AF.BestandVeehouderijbedrijven.gebouw</Identifier>
+      <d:Title>BestandVeehouderijbedrijven, gebouwen</d:Title>
+      <s:CRS>EPSG:28992</s:CRS>
+      <Layer>AF.BestandVeehouderijbedrijven.gebouw</Layer>
+    </Theme>
+
+    <Theme>
+      <Identifier>AF.BestandVeehouderijbedrijven.emissiepunt</Identifier>
+      <d:Title>BestandVeehouderijbedrijven, emissiepunten</d:Title>
+      <s:CRS>EPSG:28992</s:CRS>
+      <Layer>AF.BestandVeehouderijbedrijven.emissiepunt</Layer>
+    </Theme>
+    
+  </Theme>
+
+</Themes>

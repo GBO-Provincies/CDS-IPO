@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ipo-admin">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="theme-buisleidingen-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-buisleidingen/theme-buisleidingen">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="theme-riscisor-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-riscisor/theme-riscisor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="theme-monsterpunt-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-monsterpunt/theme-monsterpunt">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="theme-monster-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-monster/theme-monster">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="theme-resultaat-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-resultaat/theme-resultaat">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="theme-bvb-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/theme-bvb/theme-bvb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/var/M2_REPO/nl/ipo/cds/admin/2.2.2/admin-2.2.2-prod.war?unpackFolder=target/m2e-wtp/overlays&amp;includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/slf/?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ipo-admin"/>
+        <property name="java-output-path" value="/ipo-admin/target/classes"/>
+    </wb-module>
+</project-modules>
