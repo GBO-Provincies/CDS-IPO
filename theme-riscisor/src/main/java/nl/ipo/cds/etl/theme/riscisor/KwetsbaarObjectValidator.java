@@ -186,7 +186,7 @@ public class KwetsbaarObjectValidator extends AbstractValidator<KwetsbaarObject,
 					constant (true),
 					validate (matches (postcode, postcodePattern)).message (Message.POSTCODE_INVALID, postcode)
 				)
-			);
+			);		
 	}
 	
 	public Validator<Message, Context> getHuisnummerValidator () {
@@ -194,9 +194,13 @@ public class KwetsbaarObjectValidator extends AbstractValidator<KwetsbaarObject,
 				ifExp (
 					huisnummer.isNull (),
 					constant (true),
-					validate (gt (huisnummer, constant (0))).message (Message.HUISNUMMER_INVALID, huisnummer) 
+					and (
+							validate (gt (huisnummer, constant (0))).message (Message.HUISNUMMER_INVALID, huisnummer),
+							validate (lt (huisnummer, constant (1000000))).message (Message.HUISNUMMER_TOO_LONG, huisnummer)
+					)
 				)
 			);
+		
 	}
 	
 	public Validator<Message, Context> getHuisletterValidator () {
@@ -253,7 +257,10 @@ public class KwetsbaarObjectValidator extends AbstractValidator<KwetsbaarObject,
 				ifExp (
 					aantalAanwezigen.isNull (),
 					constant (true),
-					validate (gte (aantalAanwezigen, constant (0))).message (Message.AANTAL_AANWEZIGEN_INVALID, aantalAanwezigen)
+					and (
+							validate (gte (aantalAanwezigen, constant (0))).message (Message.AANTAL_AANWEZIGEN_INVALID, aantalAanwezigen),
+							validate (lt (aantalAanwezigen, constant (1000000))).message (Message.AANTAL_AANWEZIGEN_TOO_LONG, aantalAanwezigen)
+					)
 				)
 			);
 	}
@@ -265,7 +272,7 @@ public class KwetsbaarObjectValidator extends AbstractValidator<KwetsbaarObject,
 					constant (true),
 					and (
 							validate (gte (aantalBouwlagen, constant (0))).message (Message.AANTAL_BOUWLAGEN_INVALID, aantalBouwlagen),
-							validate (lte (aantalBouwlagen, constant (9))).message (Message.AANTALBOUWLAGEN_TOO_LONG, aantalBouwlagen)
+							validate (lt (aantalBouwlagen, constant (1000))).message (Message.AANTALBOUWLAGEN_TOO_LONG, aantalBouwlagen)
 					)
 				)
 			);
@@ -359,6 +366,12 @@ public class KwetsbaarObjectValidator extends AbstractValidator<KwetsbaarObject,
 					)
 				).shortCircuit ()
 				*/
+			);
+	}
+	
+	public Validator<Message, Context> getHuisnummerAndPostcodeValidator () {
+		return validate (
+					validate (not (or (isBlank(postcode), huisnummer.isNull ()))).message (Message.POSTCODE_OR_HUISNUMMER_EMPTY)
 			);
 	}
 }
