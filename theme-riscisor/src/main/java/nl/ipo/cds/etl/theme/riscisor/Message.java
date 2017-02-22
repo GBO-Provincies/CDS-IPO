@@ -32,6 +32,8 @@ public enum Message implements ValidatorMessageKey<Message, Context> {
 	POSTCODE_INVALID,					// externId, postcode
 	
 	HUISNUMMER_INVALID,					// externId, huisnummer
+	HUISNUMMER_TOO_LONG,
+	POSTCODE_OR_HUISNUMMER_EMPTY,
 	
 	HUISLETTER_INVALID,					// externId, huisletter
 	
@@ -46,6 +48,7 @@ public enum Message implements ValidatorMessageKey<Message, Context> {
 	COORDINAAT_NOT_RD,					// externId, srs
 	
 	AANTAL_AANWEZIGEN_INVALID,			// externId, aantalAanwezigen
+	AANTAL_AANWEZIGEN_TOO_LONG,
 	
 	AANTAL_BOUWLAGEN_INVALID,			// externId, aantalBouwlagen
 	AANTALBOUWLAGEN_TOO_LONG,

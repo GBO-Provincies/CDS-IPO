@@ -19,9 +19,11 @@ NAAM_EMPTY=Kwetsbaar object ${1} heeft een lege waarde voor naam
 NAAM_TOO_LONG=Kwetsbaar object ${1} heeft een te lange waarde voor naam: ${2} karakters, waar ${3} is toegestaan
 
 POSTCODE_INVALID=Kwetsbaar object ${1} heeft een ongeldige postcode ${2}. Postcode wordt verwacht in het formaat 9999AA
+POSTCODE_OR_HUISNUMMER_EMPTY=Kwetsbaar object ${1} moet een postcode en huisnummer hebben
 
 HUISNUMMER_INVALID=Kwetsbaar object ${1} heeft een ongeldig huisnummer ${2}
-
+HUISNUMMER_TOO_LONG=Kwetsbaar object ${1} heeft een ongeldig huisnummer ${2} max 999999 is toegestaan
+					
 HUISLETTER_INVALID=Kwetsbaar object ${1} heeft een ongeldige huisnummer letter ${2}
 
 HUISNUMMERTOEVOEGING_INVALID=Kwetsbaar object ${1} heeft een ongeldige huisnummer toevoeging ${2}
@@ -35,9 +37,10 @@ COORDINAAT_NO_SRS=Kwetsbaar object ${1} heeft geen SRS
 COORDINAAT_NOT_RD=De geometrie van kwetsbaar object ${1} heeft een ongeldig SRS "${2}" (verwacht: "EPSG:28992")
 
 AANTAL_AANWEZIGEN_INVALID=Kwetsbaar object ${1} heeft een ongeldig aantal aanwezigen ${2}
+AANTAL_AANWEZIGEN_TOO_LONG=Kwetsbaar object ${1} heeft een ongeldig aantal aanwezigen ${2} max 999999 is toegestaan
 
 AANTAL_BOUWLAGEN_INVALID=Kwetsbaar object ${1} heeft een ongeldig aantal bouwlagen ${2}
-AANTALBOUWLAGEN_TOO_LONG=Kwetsbare object ${1} heeft een te lange waarde voor aantal bouwlagen: ${2} waar 9 posities is toegestaan
+AANTALBOUWLAGEN_TOO_LONG=Kwetsbare object ${1} heeft een te lange waarde voor aantal bouwlagen: ${2} max 999 is toegestaan
 
 PREVAPCODE_NULL=Kwetsbaar object ${1} heeft geen prevapcode
 PREVAPCODE_INVALID=Kwetsbaar object ${1} heeft een ongeldige prevapcode: ${2}
